@@ -1,0 +1,18 @@
+// item[0]: ISO country code
+// item[1]: Oil Consumption in million tonnes in 2014
+
+var consumption = [
+        ["USA", 836.1], ["ARG",30.9], ["BRA",142.5], ["ECU",12.1],
+        ["PER",10.4], ["TTO",1.6], ["VEN",38.6],["CHL",16.7],["COL",14.5],
+        ["CAN",103.0],
+        ["AUS",12.6], ["AZE",4.6], ["BLR",11], ["BEL", 30], ["BGR", 3.8], 
+        ["CZE",9.2], ["DNK",7.7], ["FIN", 8.6], ["FRA", 76.9], ["GER",111.5], 
+        ["GR ",14.2], ["HUN",6], ["IRL",6.6], ["ITA",56.6], ["KAZ",13],
+        ["LTU",2.5], ["NLD",39.6], ["NOR",10.3], ["POL",23.8], ["PRT",11.4],
+        ["ROU",9.0], ["RUS",148.1], ["SVK",3.5], ["ESP",59.5], ["SWE",14.4],
+        ["CHE", 10.6], ["TUR",33.8], ["TKM",6.4], ["UKR",10.2], ["GBR",69.3],
+        ["UZB",3.1], ["IRN",31.3]
+        ];
+
+
+var world_consumtion = 4211.1;

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">	
+<head>
+	<meta charset="utf-8">
+	<title>Economy through Oil Trade</title>
+	<meta name="description" content="The World Economy through Oil Trade Data">
+	<meta name="author" content="Thuy Nguyen">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="lib/reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="lib/reveal.js/css/theme/moon.css" id="theme">
+
+	<link rel="stylesheet" href="lib/highlight/styles/monokai_sublime.css">
+
+	<link rel="stylesheet" href="extra/custom.css">
+	<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+	<script>
+	if( window.location.search.match( /print-pdf/gi ) ) {
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = 'lib/reveal.js/css/print/pdf.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	}
+	</script>
+</head>
+<body>
+	<!-- Wrap the entire slide show in a div using the "reveal" class. -->
+	<div class="reveal">
+		<!-- Wrap all slides in a single "slides" class -->
+		<div class="slides">
+			<!-- Each section element contains an individual slide -->
+			<section style="text-align: center;">
+				<h3>The World Economy through</h3>
+				<h1>Oil Trade Data</h1>
+				<p>Every major economy around the world is fueled by oil. But most of them don't produce the oil they use. Who benefit from the lower oil prices, and who suffer from them?</p>
+				<p>
+					<small>Visualized by Thuy Nguyen</small>
+				</p>
+			</section>
+			
+			<section>
+				<h1>Imports and Exports Overview 2014</h1>
+			</section>
+			<section>
+				<h3>Oil Consumption per capita 2014</h3>
+				<div id="consumption"  style="position: relative; width: 900px; height: 500px;"></div>
+			</section>
+			<section>
+				<h3>Crude Oil Prices through History</h3>
+				<p><small>Oil prices have been tightly coupled with major world events. Find out what events caused oil price to drop and what events triggered the spikes.</small></p>
+				<div id="oilprices">
+				</div>
+			</section>
+			<section>
+				<h1>Trade Network</h1>
+			</section>
+
+
+		</div>
+	</div>
+	
+	<script src="lib/jquery-1.11.3.min.js"></script>
+	<script src="lib/reveal.js/lib/js/head.min.js"></script>
+	<script src="lib/reveal.js/js/reveal.js"></script>
+	<script src="lib/d3.v3.min.js"></script>
+	<script src="lib/topojson.js"></script>
+	<script src="lib/datamaps.all.min.js"></script>
+
+	<script src="data/prices.json"></script>
+	<script src="oilpricesvis.js"></script>
+	<script src="data/pop2014.json"></script>
+	<script src="data/consumption.json"></script>
+	<script src="consumptionvis.js"></script>
+
+
+	<script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      	controls: true,
+      	progress: true,
+      	history: true,
+      	center: true,
+      	fragments: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+        { src: 'lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'lib//highlight/highlight.pack.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'lib/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'lib/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+$(document).ready(function() {
+	console.log("check1");
+	drawConsumptionMap(population_data, consumption);
+	drawPricesLineChart(prices);
+});
+
+
+
+
+</script>
+</body>
+</html>
