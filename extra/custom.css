@@ -155,7 +155,6 @@ button {
 
 .axis text {
   color: #fff;
-  stroke: #fff;
   fill: #fff;
 }
 
@@ -165,4 +164,52 @@ button {
 
 .x.axis .minor {
   stroke-opacity: .5;
+}
+
+#consumption {
+  font: 14px sans-serif;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+path.slice{
+  stroke-width:2px;
+}
+
+polyline{
+  opacity: .3;
+  stroke: black;
+  stroke-width: 2px;
+  fill: none;
+}
+
+#prod_regions {
+  font: 10px sans-serif;
+  color: #fff;
+  fill: #fff;
+}
+
+#cons_regions {
+  font: 10px sans-serif;
+  color: #fff;
+  fill: #fff;
+}
+
+.#cons_countries {
+  font: 10px sans-serif;
+}
+
+#cons_countries .node{
+  border: solid 1px white;
+  font: 10px sans-serif;
+  line-height: 12px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 2px;
+  color: #fff;
+  fill: #fff;
 }

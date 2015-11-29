@@ -63,7 +63,8 @@ var prices = [
   {
     "date": 1873,
     "raw_value": 1.83,
-    "adjusted_value": 35.44
+    "adjusted_value": 35.44,
+    "history_event" : "Panic of 1873 - Long Depression began: The anic of 1873 was a financial crisis that triggered a depression in Europe and North America that lasted from 1873 until 1879, and even longer in some countries. In Britain, for example, it started two decades of stagnation known as the Long Depression that weakened the country's economic leadership.[1] The Panic was known as the Great Depression until the events in the early 1930s took precedence"
   },
   {
     "date": 1874,
@@ -163,7 +164,8 @@ var prices = [
   {
     "date": 1893,
     "raw_value": 0.64,
-    "adjusted_value": 16.53
+    "adjusted_value": 16.53,
+    "history_event" : "Panic of 1893: a serious economic depression in the United States"
   },
   {
     "date": 1894,
@@ -178,13 +180,14 @@ var prices = [
   {
     "date": 1896,
     "raw_value": 1.18,
-    "adjusted_value": 32.91
+    "adjusted_value": 32.91,
+    "history_event" : "Panic of 1896: an acute economic depression in the United States that was less serious than other panics of the era precipitated by a drop in silver reserves and market concerns on the effects it would have on the gold standard. Deflation of commodities prices drove the stock market to new lows in a trend that began to reverse only after the 1896 election of William McKinley"
   },
   {
     "date": 1897,
     "raw_value": 0.79,
     "adjusted_value": 22.03
-  },
+    },
   {
     "date": 1898,
     "raw_value": 0.91,
@@ -203,7 +206,8 @@ var prices = [
   {
     "date": 1901,
     "raw_value": 0.96,
-    "adjusted_value": 26.77
+    "adjusted_value": 26.77,
+    "history_event" : "Texas oil boom: sometimes called the gusher age, was a period of dramatic change and economic growth in the U.S. state of Texas during the early 20th century that began with the discovery of a large petroleum reserve near Beaumont, Texas. The find was unprecedented in its size and ushered in an age of rapid regional development and industrialization that has few parallels in U.S. history"
   },
   {
     "date": 1902,
@@ -268,7 +272,8 @@ var prices = [
   {
     "date": 1914,
     "raw_value": 0.81,
-    "adjusted_value": 18.76
+    "adjusted_value": 18.76,
+    "history_event" : "World War I began on 28 July 1914"
   },
   {
     "date": 1915,
@@ -283,23 +288,25 @@ var prices = [
   {
     "date": 1917,
     "raw_value": 1.56,
-    "adjusted_value": 28.32
+    "adjusted_value": 28.32,
+    "history_event" : "The Russian Revolution of 1917 (ending in the overthrow of the Tsarist regime and the brutal execution of His Imperial Majesty Nicholas II and his family) sparked a wave of communist revolutions across Europe, prompting many to believe that a socialist world revolution could be realized in the near future"
   },
   {
     "date": 1918,
     "raw_value": 1.98,
-    "adjusted_value": 30.6
+    "adjusted_value": 30.6,
+    "history_event": "WWI ended"
   },
   {
     "date": 1919,
     "raw_value": 2.01,
-    "adjusted_value": 27.06
+    "adjusted_value": 27.06,
+    "history_event" : "Fear of shortage in the US: In August 1919, the U.S. Geological Survey stated that domestic petroleum resources were inadequate to provide the estimated 100 million barrels needed by 1922 to operate the navy and the merchant marine. The United States would have to compete with other nations for imports of crude oil"
   },
   {
     "date": 1920,
     "raw_value": 3.07,
-    "adjusted_value": 35.68,
-    "history_event" : "Fear of shortage in the US."
+    "adjusted_value": 35.68
   },
   {
     "date": 1921,
@@ -309,7 +316,8 @@ var prices = [
   {
     "date": 1922,
     "raw_value": 1.61,
-    "adjusted_value": 22.36
+    "adjusted_value": 22.36,
+    "history_event" : "New Mexico Oil Discovery: New Mexico's first commercial oil well is drilled September 25, 1922, on the Navajo Indian Reservation near Shiprock by the Midwest Refining Company"
   },
   {
     "date": 1923,
@@ -344,18 +352,20 @@ var prices = [
   {
     "date": 1929,
     "raw_value": 1.27,
-    "adjusted_value": 17.26
+    "adjusted_value": 17.26,
+    "history_event" : "Great Depression - The crash of Wall Street"
   },
   {
     "date": 1930,
     "raw_value": 1.19,
-    "adjusted_value": 16.59
+    "adjusted_value": 16.59,
+    "history_event" : "U.S. oil boom in 1930 when Humble Oil Company of Texas drilled a well three miles northwest of Hobbs that began producing a spectacular 9,500 barrels of oil a day.  Humble Oil also introduced a new drilling technology to the field – the rotary rig. As the boom expanded, oil tank batteries were built and pipelines laid to transport both oil and natural gas. But there was a growing problem of getting petroleum to market. Relief came when the first train, operated by Texas & New Mexico Railways, arrived in Hobbs in April 1930"
   },
   {
     "date": 1931,
     "raw_value": 0.65,
     "adjusted_value": 9.94,
-    "history_event" : "East Taxas field discovered"
+    
   },
   {
     "date": 1932,
@@ -395,7 +405,8 @@ var prices = [
   {
     "date": 1939,
     "raw_value": 1.02,
-    "adjusted_value": 17.1
+    "adjusted_value": 17.1,
+    "history_event":"World War II"
   },
   {
     "date": 1940,
@@ -503,7 +514,8 @@ var prices = [
   {
     "date": 1960,
     "raw_value": 1.9,
-    "adjusted_value": 14.93
+    "adjusted_value": 14.93,
+    "history_event": "OPEC was established in Baghdad, Iraq"
   },
   {
     "date": 1961,
@@ -553,7 +565,7 @@ var prices = [
   {
     "date": 1970,
     "raw_value": 1.8,
-    "adjusted_value": 10.79
+    "adjusted_value": 10.79,
   },
   {
     "date": 1971,
@@ -569,12 +581,13 @@ var prices = [
     "date": 1973,
     "raw_value": 3.29,
     "adjusted_value": 17.25,
-    "history_event" : "Yom Kippur War, also known as the 1973 Arab–Israeli War"
+    "history_event" : "Yom Kippur War, also known as the 1973 Arab–Israeli War. Oil crisis: OAPEC proclaimed oil embargo, which started in October 1973 and lasted through a long, cold winter. Almost overnight, the price of oil jumped 400 percent, from $3 a barrel before the embargo to $12 a barrel during the embargo, which began as a response to U.S. support for Israel during the 1973 Arab-Israeli War."
   },
   {
     "date": 1974,
     "raw_value": 11.58,
-    "adjusted_value": 54.74
+    "adjusted_value": 54.74,
+    "history_event": "In March 1974, the Organization of the Petroleum Exporting Countries (OPEC), made up primarily of Arab nations, decided to end a six-month embargo that had crippled much of the global economy, frayed the Western world's social fabric and exposed mankind's utter dependence on one limited resource: oilIn March 1974, the Organization of the Petroleum Exporting Countries (OPEC), made up primarily of Arab nations, decided to end a six-month embargo that had crippled much of the global economy, frayed the Western world's social fabric and exposed mankind's utter dependence on one limited resource: oil"
   },
   {
     "date": 1975,
@@ -600,17 +613,19 @@ var prices = [
     "date": 1979,
     "raw_value": 31.61,
     "adjusted_value": 101.43,
-    "history_event" : "Iranian revolution"
+    "history_event" : "Iranian revolution. Oil shock occurred in the United States due to decreased oil output in the wake of the Iranian Revolution"
   },
   {
     "date": 1980,
     "raw_value": 36.83,
-    "adjusted_value": 104.12
+    "adjusted_value": 104.12,
+    "history_event": "Oil glut: new supplies from Mexico, the North Sea and Alaska created an oil surplus. Reduced demand and overproduction produced a glut on the world market, causing a six-year-long decline in oil prices culminating with a 46 percent price drop in 1986"
   },
   {
     "date": 1981,
     "raw_value": 35.93,
-    "adjusted_value": 92.08
+    "adjusted_value": 92.08,
+    "history_event" : "The Early 1980s recession in the United States: began in July 1981 and ended in November 1982. One cause was the Federal Reserve's contractionary monetary policy that sought to rein in the high inflation. In the wake of the 1973 oil crisis and the 1979 energy crisis, stagflation began to afflict the U.S. economy."
   },
   {
     "date": 1982,
@@ -630,18 +645,19 @@ var prices = [
   {
     "date": 1985,
     "raw_value": 27.56,
-    "adjusted_value": 59.67
+    "adjusted_value": 59.67,
+    "history_event" : "In late 1985, Saudi Arabia increased production, and aggressively moved to increase market share. Saudi Arabia tried a netback-pricing concept, which tied crude oil prices to the value of refined petroleum products. This reversed traditional economic relationships by guaranteeing specific margins to refiners, thereby transferring risk from the crude oil purchaser to the producer. In response, other OPEC members also increased production and offered netback-pricing arrangements to maintain market share and to offset declining revenues. These actions resulted in a glut of crude oil in world markets, and crude oil prices fell sharply in early 1986"
   },
   {
     "date": 1986,
     "raw_value": 14.43,
-    "adjusted_value": 30.67,
-    "history_event" : "Netback Pricing and the Oil Price Collapse of 1986"
-  },
+    "adjusted_value": 30.67
+    },
   {
     "date": 1987,
     "raw_value": 18.44,
-    "adjusted_value": 37.8
+    "adjusted_value": 37.8,
+    "history_event": "Black Monday: refers to Monday, October 19, 1987, when stock markets around the world crashed, shedding a huge value in a very short time. The crash began in Hong Kong and spread west to Europe, hitting the United States after other markets had already declined by a significant margin"
   },
   {
     "date": 1988,
@@ -661,7 +677,8 @@ var prices = [
   {
     "date": 1991,
     "raw_value": 20,
-    "adjusted_value": 34.21
+    "adjusted_value": 34.21,
+    "history_event" : "Early 1990s recession: The recession of the early 1990s describes the period of economic downturn affecting much of the world in the late 1980s and early 1990s, including the 1990s Finnish Banking Crisis and 1990s Swedish Banking Crisis"
   },
   {
     "date": 1992,
@@ -702,7 +719,8 @@ var prices = [
   {
     "date": 1999,
     "raw_value": 17.97,
-    "adjusted_value": 25.13
+    "adjusted_value": 25.13,
+    "history_event" : "The Euro is established"
   },
   {
     "date": 2000,
@@ -750,12 +768,13 @@ var prices = [
     "date": 2008,
     "raw_value": 97.26,
     "adjusted_value": 105.23,
-    "history_event": "Asian financial crisis"
+    "history_event": "Asian financial crisis, Icelandic financial crisis, Irish banking crisis, Russian financial crisis, Automotive industry crisis"
   },
   {
     "date": 2009,
     "raw_value": 61.67,
-    "adjusted_value": 66.97
+    "adjusted_value": 66.97,
+    "history_event": "European sovereign debt crisis, Greek Government debt crisis"
   },
   {
     "date": 2010,
