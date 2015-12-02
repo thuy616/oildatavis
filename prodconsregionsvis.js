@@ -28,6 +28,11 @@ drawProductionByRegions = function(prodbyregions) {
 	visualize(p_data2004, "prod_regions_2004", p_size2004.toFixed(1));
 	visualize(p_data2009, "prod_regions_2009", p_size2009.toFixed(1));
 	visualize(p_data2014, "prod_regions_2014", p_size2014);
+
+	$('#p_total2004').text("Total " + p_total2004.toFixed(1) + " Million Tonnes");
+	$('#p_total2009').text("Total " + p_total2009.toFixed(1) + " Million Tonnes");
+	$('#p_total2014').text("Total " + p_total2014.toFixed(1) + " Million Tonnes");
+
 }
 
 drawConsumptionByRegions = function(consbyregions) {
@@ -67,6 +72,9 @@ drawConsumptionByRegions = function(consbyregions) {
 	visualize(c_data2009, "cons_regions_2009", c_size2009.toFixed(1));
 	visualize(c_data2014, "cons_regions_2014", c_size2014.toFixed(1));
 
+	$('#c_total2004').text("Total " + c_total2004.toFixed(1) + " Million Tonnes");
+	$('#c_total2009').text("Total " + c_total2009.toFixed(1) + " Million Tonnes");
+	$('#c_total2014').text("Total " + c_total2014.toFixed(1) + " Million Tonnes");
 }
 
 function visualize(data, div, size) {
@@ -77,7 +85,7 @@ function visualize(data, div, size) {
     var legendRectSize = 15;                                  // NEW
     var legendSpacing = 4;                                    // NEW
     var color = d3.scale.ordinal()
-	.range(["#F7CA18", "#96BE64", "#60E8F1", "#5D94BF", "#E7C4FF", "#E66C6B"]);
+	.range(["#f5d452", "#96BE64", "#00e5e5", "#4183D7", "#E7C4FF", "#E66C6B"]);
 	//div where the chart is drawn
 	var area = "#" + div;
 	var svg = d3.select(area).append("svg")
@@ -103,7 +111,15 @@ function visualize(data, div, size) {
           .attr('d', arc)
           .attr('fill', function(d, i) { 
             return color(d.data.region);
-          });
+          })
+          .transition().delay(function(d, i) { return i * 500; }).duration(500)
+  			.attrTween('d', function(d) {
+		       var i = d3.interpolate(d.startAngle+0.1, d.endAngle);
+		       return function(t) {
+		           d.endAngle = i(t);
+		         return arc(d);
+		       }
+		  });
 
 	var g = svg.selectAll(".arc")
 	.data(pie(data))

@@ -1,0 +1,187 @@
+var exports = [
+  {
+    "Country": "Canada",
+    "Value": 2018,
+    "Continent": "North America"
+  },
+  {
+    "Country": "United States",
+    "Value": 119,
+    "Continent": "North America"
+  },
+  {
+    "Country": "Columbia",
+    "Value": 367,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Ecuador",
+    "Value": 388,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Mexico",
+    "Value": 1271,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Trinidad and Tobago",
+    "Value": 65,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Venezuela",
+    "Value": 1937,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Others Latin America",
+    "Value": 384,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Russia",
+    "Value": 4710,
+    "Continent": "Eastern Europe"
+  },
+  {
+    "Country": "Others Eastern Europe",
+    "Value": 1875,
+    "Continent": "Eastern Europe"
+  },
+  {
+    "Country": "Norway",
+    "Value": 1198,
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "United Kingdom",
+    "Value": 595,
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "Others Western Europe",
+    "Value": 165,
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "Iran",
+    "Value": 1215,
+    "Continent": "Middle East"
+  },
+  {
+    "Country": "Iraq",
+    "Value": 2390,
+    "Continent": "Middle East"
+  },
+  {
+    "Country": "Kuwait",
+    "Value": 2058,
+    "Continent": "Middle East"
+  },
+  {
+    "Country": "Oman",
+    "Value": 838,
+    "Continent": "Middle East"
+  },
+  {
+    "Country": "Qatar",
+    "Value": 599,
+    "Continent": "Middle East"
+  },
+  {
+    "Country": "Saudi Arabia",
+    "Value": 7571,
+    "Continent": "Middle East"
+  },
+  {
+    "Country": "United Arab Emirates",
+    "Value": 2701,
+    "Continent": "Middle East"
+  },
+  {
+    "Country": "Others Middle East",
+    "Value": 280,
+    "Continent": "Middle East"
+  },
+  {
+    "Country": "Algeria",
+    "Value": 744,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Angola",
+    "Value": 1669,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Congo",
+    "Value": 153,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Egypt",
+    "Value": 97,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Gabon",
+    "Value": 58,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Libya",
+    "Value": 589,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Nigeria",
+    "Value": 2193,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Sudans",
+    "Value": 70,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Others Africa",
+    "Value": 278,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Australia",
+    "Value": 205,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "Brunei",
+    "Value": 115,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "China",
+    "Value": 32,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "Indonesia",
+    "Value": 316,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "Malaysia",
+    "Value": 263,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "Vietnam",
+    "Value": 102,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "Others Asia Pacific",
+    "Value": 202,
+    "Continent": "Asia Pacific & Oceania"
+  }
+]

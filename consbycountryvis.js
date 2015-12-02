@@ -4,7 +4,7 @@ drawConsumptionByCountry = function() {
 	height = 500 - margin.top - margin.bottom;
 
 	var color = d3.scale.ordinal()
-	.range(["#F7CA18", "#96BE64", "#60E8F1", "#5D94BF", "#E7C4FF", "#E66C6B"]);
+	.range(["#f5d452", "#96BE64", "#00e5e5", "#4183D7", "#E7C4FF", "#E66C6B"]);
 
 	var treemap = d3.layout.treemap()
 	.size([width, height])

@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="lib/reveal.js/css/reveal.css">
 	<link rel="stylesheet" href="lib/reveal.js/css/theme/moon.css" id="theme">
 
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="lib/highlight/styles/monokai_sublime.css">
 	<link rel="stylesheet" href="extra/custom.css">
 	
@@ -34,76 +35,105 @@
 		<!-- Wrap all slides in a single "slides" class -->
 		<div class="slides">
 			<!-- Each section element contains an individual slide -->
-			<section style="text-align: center;">
-				<h3>The World Economy through</h3>
+			<section class="landing" style="text-align: center;">
+				<h3>The World <inred>Economy</inred> through</h3>
 				<h1>Oil Trade Data</h1>
 				<p>Every major economy around the world is fueled by oil. But most of them don't produce the oil they use. Who benefit from the lower oil prices, and who suffer from them?</p>
 				<p>
 					<small>Visualized by Thuy Nguyen</small>
 				</p>
 			</section>
-			<section>
-				<h3>World Production Overview</h3>
-				<p><small>Productions by Regions in Million Tonnes</small></p>
-				<div id="prod_regions">
-					<div id="prod_regions_2004" class='span4'>
-						<p style="text-align:center;font-size:30px">2004</p>
+		
+				<section>
+					<h2>PRODUCTION & <inred>EXPORTS</inred></h2>
+				</section>
+				<section data-state = "prodbyregionRedraw">
+					<h3>World <inred>Production</inred> Overview</h3>
+					<p><small>Productions by Regions in Million Tonnes</small></p>
+					<div id="prod_regions">
+						<div id="prod_regions_2004" class='span4'>
+							<p style="text-align:center;font-size:30px">2004</p>
+							<p id="p_total2004" style="text-align:center"><small></small></p>
+						</div>
+						<div id="prod_regions_2009" class='span4'>
+							<p style="text-align:center;font-size:30px">2009</p>
+							<p id="p_total2009" style="text-align:center"><small></small></p>
+						</div>
+						<div id="prod_regions_2014" class='span4'>
+							<p style="text-align:center;font-size:30px">2014</p>
+							<p id="p_total2014" style="text-align:center"><small></small></p>
+						</div>
 					</div>
-					<div id="prod_regions_2009" class='span4'>
-						<p style="text-align:center;font-size:30px">2009</p>
+				</section>
+				<section data-state="prodUSRedraw">
+					<h3>But <inred>U.S.</inred> Crude Oil Production is on the rise</h3>
+					<div id="prodUS">
 					</div>
-					<div id="prod_regions_2014" class='span4'>
-						<p style="text-align:center;font-size:30px">2014</p>
+					<p><small>With <inred>technological</inred> advancements, oil production in the United States and Canada is now outstripping production in Saudi Arabia.</small></p>
+				</section>
+				<section>
+					<h2>CONSUMPTION & <inred>IMPORTS</inred></h2>
+				</section>
+				<section data-state = "consbyregionRedraw">
+					<h3>World Consumption Overview</h3>
+					<p><small>Consumption by Regions in Million Tonnes</small></p>
+					<div id="cons_regions">
+						<div id="cons_regions_2004" class='span4'>
+							<p style="text-align:center;font-size:30px">2004</p>
+							<p id="c_total2004" style="text-align:center"><small></small></p>
+						</div>
+						<div id="cons_regions_2009" class='span4'>
+							<p style="text-align:center;font-size:30px">2009</p>
+							<p id="c_total2009" style="text-align:center"><small></small></p>
+						</div>
+						<div id="cons_regions_2014" class='span4'>
+							<p style="text-align:center;font-size:30px">2014</p>
+							<p id="c_total2014" style="text-align:center"><small></small></p>
+						</div>
 					</div>
-				</div>
-
-			</section>
-			<section>
-				<h3>World Consumption Overview</h3>
-				<p><small>Consumption by Regions in Million Tonnes</small></p>
-				<div id="cons_regions">
-					<div id="cons_regions_2004" class='span4'>
-						<p style="text-align:center;font-size:30px">2004</p>
+				</section>
+				<section>
+					<h3>Biggest Oil Consumers</h3>
+					<div id="cons_countries">
+						<form>
+						  <label><input type="radio" name="mode" value="size" checked> Consumption in Million Tonnes 2014</label>
+						  <label><input type="radio" name="mode" value="count"> Imports in Thousands Barrels per Day 2012</label>
+						</form>
 					</div>
-					<div id="cons_regions_2009" class='span4'>
-						<p style="text-align:center;font-size:30px">2009</p>
-					</div>
-					<div id="cons_regions_2014" class='span4'>
-						<p style="text-align:center;font-size:30px">2014</p>
-					</div>
-				</div>
-			</section>
-			<section>
-				<h3>Biggest Oil Consuming Countries</h3>
-				<div id="cons_countries">
-					<form>
-					  <label><input type="radio" name="mode" value="size" checked> Consumption in Million Tonnes 2014</label>
-					  <label><input type="radio" name="mode" value="count"> Imports in Thousands Barrels per Day 2012</label>
-					</form>
-				</div>
-			</section>
-			<section data-state="consumptionRedraw">
-				<h3>Oil Consumption per capita 2014</h3>
-				<p><small>Singapore tops the chart for oil consumption per capita at 121 tonnes, more than double the second highest ranked country, which is Kuwait at 59.2 tonnes per person. With 0.4 tonnes, Bangladesh consumes the least oil per person. This map clearly shows the economy status of each country.</small></p>
-				<div id="consumption"  style="position: relative; width: 900px; height: 500px;"></div>
-			</section>
-			<section>
-				<h3>Crude Oil Prices through History</h3>
-				<p><small>Oil prices have been tightly coupled with major world events and have a significant, long-asting impact on the economy. Find out from the chart what events caused oil price to drop and what events triggered the spikes.</small></p>
-				<div id="oilprices">
-				</div>
+				</section>
+				<section data-state="consumptionRedraw">
+					<h3>Oil Consumption per capita 2014</h3>
+					<p><small>Singapore tops the chart for oil consumption per capita at 121 tonnes, more than double the second highest ranked country, which is Kuwait at 59.2 tonnes per person. With 0.4 tonnes, Bangladesh consumes the least oil per person. This map clearly shows the economy status of each country.</small></p>
+					<div id="consumption"  style="position: relative; width: 900px; height: 500px;"></div>
+				</section>
+		
+				<section>
+					<h2>Crude Oil <inred>Prices</inred> through History</h2>
+				</section>
+				<section data-state="multilinesRedraw">
+					<h3>Supply & <inred>Demand</inred></h3>
+					<p><small>The concept of supply and demand is fairly straightforward. As demand increases (or supply decreases) the price should go up. As demand decreases (or supply increases) the price should go down. Is it true for oil?</small></p>
+					<div id="multilines"></div>
+				</section>
 				
-			</section>
+				<section data-state="pricesRedraw">
+					<h3>What <inred>Really</inred> Affects Oil Prices</h3>
+					<p><small>Welcome to the world of oil in 2015 — a repeat in surprising ways of the story 30 years ago. Between November 1985 and March 1986, the price of crude plunged by 67%. Between June 2014 and today, crude prices have fallen by 57% and could well head lower.</small></p>
+					<div id="oilprices">
+					</div>
+					
+				</section>
+				<section>
+					<h3><inred>2014</inred> Free Fall</h3>
+					<p><small>Oil prices have plummeted by 50 percent since September.</small></p>
+					<p><small>World economic growth was slowing. Europe was on its back. China’s economy was slowing, too, and that meant slowing growth in oil demand.</small></p>
+					<p><small>However, The 2014 oil price decline isn’t being driven by a decline in demand, instead it’s being driven by an increase in supply.</small></p>
+					<p><small>With technological advancements, oil production in the United States and Canada is now outstripping production in Saudi Arabia. Saudi were not cutting production to “defend” prices, market activity moved oil prices downward.</small></p>
+				</section>
+				
 			<section>
-				<h3>2014 Collapse of Oil Prices</h3>
-				<p><small>Oil prices have plummeted by 50 percent since September.</small></p>
-				<p><small>World economic growth was slowing. Europe was on its back. China’s economy was slowing, too, and that meant slowing growth in oil demand.</small></p>
-				<p><small>However, The 2014 oil price decline isn’t being driven by a decline in demand, instead it’s being driven by an increase in supply.</small></p>
-				<p><small>With technological advancements, oil production in the United States and Canada is now outstripping production in Saudi Arabia. Saudi were not cutting production to “defend” prices, market activity moved oil prices downward.</small></p>
-			</section>
-			<section>
-				<h3>The Trade Network</h3>
-				<p>Over all, the fall in oil prices could mean a $1.5 to $2 trillion transfer from oil-exporting countries to oil-importing countries. Japan will be a big beneficiary. So will China and America.</p>
+				<h2>How will the current <inred>drop</inred> in Oil Prices effect the World Economy ?</h2>
+				<p>It could mean a $1.5 to $2 trillion transfer from oil-exporting countries to oil-importing countries. Japan will be a big beneficiary. So will China and America.</p>
 			</section>
 
 
@@ -133,6 +163,14 @@
 	<script src="data/consumption.json"></script>
 	<script src="consumptionvis.js"></script>
 
+	<script src="data/continents.js"></script>
+	<script src="data/countries.js"></script>
+	<script src="importexportvis.js"></script>
+	<script src="data/world_import.js"></script>
+	<script src="data/world_export.js"></script>
+	
+	<script src="multilinesvis.js"></script>
+	<script src="prodUSvis.js"></script>
 
 	<script>
 
@@ -164,15 +202,45 @@
     });
 
 	$(document).ready(function() {
-		drawProductionByRegions(production_regions);
-		drawConsumptionByRegions(consumption_regions);
+		//drawProductionByRegions(production_regions);
+		    
+		Reveal.addEventListener( 'prodbyregionRedraw', function( event ) {
+		    //redraw map
+		    drawProductionByRegions(production_regions);
+		    
+		} );
+		Reveal.addEventListener( 'prodUSRedraw', function( event ) {
+		    //redraw map
+		    $("#prodUS").empty();
+		    drawProdUSChart();
+		} );
+		
+		Reveal.addEventListener( 'consbyregionRedraw', function( event ) {
+		    //redraw map
+		    
+		    drawConsumptionByRegions(consumption_regions);
+		} );
+		
 		drawConsumptionByCountry();
+
 		Reveal.addEventListener( 'consumptionRedraw', function( event ) {
 		    //redraw map
 		    $( "#consumption" ).empty();
 		    drawConsumptionMap(population_data, consumption);
 		} );
-		drawPricesLineChart(prices);
+		Reveal.addEventListener( 'pricesRedraw', function( event ) {
+		    //redraw map
+		    $( "#oilprices" ).empty();
+		    drawPricesLineChart(prices);
+		} );
+		Reveal.addEventListener( 'multilinesRedraw', function( event ) {
+		    //redraw map
+		    $( "#multilines" ).empty();
+		    drawMultiLinesChart();
+		} );
+		
+		//drawImportsExports();
+		
 
 	});
 	

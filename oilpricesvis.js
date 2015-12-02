@@ -29,6 +29,7 @@ drawPricesLineChart = function (prices) {
 	  	}
 	});
 
+
 	console.log(data[0].date + " " + data[0].adjusted_value);
 
 	var line = d3.svg.line()
@@ -93,5 +94,15 @@ drawPricesLineChart = function (prices) {
 	    .append("svg:title")
    		.text(function(d) { return d.history_event; });
 
-
+   	//animation
+  	d3.select("#oilprices").selectAll("path.line").each(function(d,i) {
+            var eachPath = d3.select(this),
+            totalLength = eachPath.node().getTotalLength();
+            eachPath.attr("stroke-dasharray", totalLength + " " + totalLength)
+            .attr("stroke-dashoffset", totalLength)
+            .transition()
+            .duration(3500)
+            .ease("linear")
+            .attr("stroke-dashoffset", 0);
+          });
 };

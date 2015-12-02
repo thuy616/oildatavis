@@ -1,0 +1,212 @@
+var imports =[
+  {
+    "Country": "Canada",
+    "Value": 653,
+    "Continent": "North America"
+  },
+  {
+    "Country": "United States",
+    "Value": "7Ê713",
+    "Continent": "North America"
+  },
+  {
+    "Country": "Brazil",
+    "Value": 364,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Chile",
+    "Value": 195,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Cuba",
+    "Value": 138,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Netherland Antilles",
+    "Value": 200,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Puerto Rico",
+    "Value": 90,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Trinidad & Tobago",
+    "Value": 39,
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Others Latin America",
+    "Value": "1Ê580",
+    "Continent": "Central & South America"
+  },
+  {
+    "Country": "Bulgaria",
+    "Value": 113,
+    "Continent": "Estern Europe"
+  },
+  {
+    "Country": "Former Czech Republic",
+    "Value": 132,
+    "Continent": "Estern Europe"
+  },
+  {
+    "Country": "Romania",
+    "Value": 109,
+    "Continent": "Estern Europe"
+  },
+  {
+    "Country": "Lithuania",
+    "Value": 189,
+    "Continent": "Estern Europe"
+  },
+  {
+    "Country": "Others Eastern Europe",
+    "Value": 822,
+    "Continent": "Estern Europe"
+  },
+  {
+    "Country": "Belgium",
+    "Value": 558,
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "France",
+    "Value": "1Ê110",
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "Germany",
+    "Value": "1Ê825",
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "Greece",
+    "Value": 392,
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "Italy",
+    "Value": "1Ê179",
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "Netherlands",
+    "Value": 952,
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "Spain",
+    "Value": "1Ê168",
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "Sweden",
+    "Value": 339,
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "Turkey",
+    "Value": 375,
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "United Kingdom",
+    "Value": "1Ê011",
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "Others Western Europe",
+    "Value": 977,
+    "Continent": "Western Europe"
+  },
+  {
+    "Country": "Bahrain",
+    "Value": 219,
+    "Continent": "Middle East"
+  },
+  {
+    "Country": "Others Middle East",
+    "Value": 133,
+    "Continent": "Middle East"
+  },
+  {
+    "Country": "C™te d'Ivoire",
+    "Value": 73,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Kenya",
+    "Value": 39,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Morocco",
+    "Value": 105,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Others Africa",
+    "Value": 629,
+    "Continent": "Africa"
+  },
+  {
+    "Country": "Australia",
+    "Value": 451,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "China",
+    "Value": "5Ê658",
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "India",
+    "Value": "3Ê782",
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "Indonesia",
+    "Value": 291,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "Japan",
+    "Value": "3Ê408",
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "New Zealand",
+    "Value": 100,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "Philippines",
+    "Value": 152,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "Singapore",
+    "Value": 784,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "South Korea",
+    "Value": "2Ê450",
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "Thailand",
+    "Value": 868,
+    "Continent": "Asia Pacific & Oceania"
+  },
+  {
+    "Country": "Others Asia Pacific",
+    "Value": "1Ê394",
+    "Continent": "Asia Pacific & Oceania"
+  }
+]

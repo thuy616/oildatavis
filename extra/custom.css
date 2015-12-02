@@ -1,13 +1,16 @@
 /* Fix reveal.js bug, see https://github.com/hakimel/reveal.js/issues/668 */
 html { background-color: inherit; }
 
+body {
+  background-color: #003042
+}
+
 section {
   text-align: left;
 }
 
 h3.box {
   float: left;
-  width: 30%;
   border: 1px solid white;
   margin: 5px;
   min-height: 30%;
@@ -135,6 +138,27 @@ button {
   background-color: white;
 }
 
+.reveal p {
+  font-family: Roboto;
+}
+
+.reveal label {
+  font-size: 20px;
+  font-family: Roboto;
+}
+.reveal small {
+  font-family: Roboto;
+}
+
+
+.red {
+  color: red;
+}
+
+.reveal inred {
+  color:red;
+}
+
 .axis path,
 .axis line {
   fill: none;
@@ -158,8 +182,9 @@ button {
   fill: #fff;
 }
 
-#oilprices {
+#oilprices, #multilines, #prodUS  {
   font: 10px sans-serif;
+  color: white;
 }
 
 .x.axis .minor {
@@ -212,4 +237,9 @@ polyline{
   text-indent: 2px;
   color: #fff;
   fill: #fff;
+}
+
+.linechart-text {
+  color: white;
+  fill:white;
 }

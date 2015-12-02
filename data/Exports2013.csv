@@ -1,0 +1,38 @@
+Country;Value;Continent
+ Canada;2018;North America
+ United States;119;North America
+ Columbia;367;Central & South America
+ Ecuador;388;Central & South America
+ Mexico;1271;Central & South America
+ Trinidad and Tobago;65;Central & South America
+ Venezuela;1937;Central & South America
+ Others Latin America;384;Central & South America
+ Russia;4710;Eastern Europe
+ Others Eastern Europe;1875;Eastern Europe
+ Norway;1198;Western Europe
+ United Kingdom;595;Western Europe
+ Others Western Europe;165;Western Europe
+ Iran;1215;Middle East
+ Iraq;2390;Middle East
+ Kuwait;2058;Middle East
+ Oman;838;Middle East
+ Qatar;599;Middle East
+ Saudi Arabia;7571;Middle East
+ United Arab Emirates;2701;Middle East
+ Others Middle East;280;Middle East
+ Algeria;744;Africa
+ Angola;1669;Africa
+ Congo;153;Africa
+ Egypt;97;Africa
+ Gabon;58;Africa
+ Libya;589;Africa
+ Nigeria;2193;Africa
+ Sudans;70;Africa
+ Others Africa;278;Africa
+ Australia;205;Asia Pacific & Oceania
+ Brunei;115;Asia Pacific & Oceania
+ China;32;Asia Pacific & Oceania
+ Indonesia;316;Asia Pacific & Oceania
+ Malaysia;263;Asia Pacific & Oceania
+ Vietnam;102;Asia Pacific & Oceania
+ Others Asia Pacific;202;Asia Pacific & Oceania
