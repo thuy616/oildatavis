@@ -83,7 +83,7 @@ d3.tsv("data/US_Crude_Oil_Production.tsv", function(error, data) {
             eachPath.attr("stroke-dasharray", totalLength + " " + totalLength)
             .attr("stroke-dashoffset", totalLength)
             .transition()
-            .duration(3500)
+            .duration(2500)
             .ease("linear")
             .attr("stroke-dashoffset", 0);
           });

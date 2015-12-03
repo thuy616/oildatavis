@@ -111,15 +111,8 @@ function visualize(data, div, size) {
           .attr('d', arc)
           .attr('fill', function(d, i) { 
             return color(d.data.region);
-          })
-          .transition().delay(function(d, i) { return i * 500; }).duration(500)
-  			.attrTween('d', function(d) {
-		       var i = d3.interpolate(d.startAngle+0.1, d.endAngle);
-		       return function(t) {
-		           d.endAngle = i(t);
-		         return arc(d);
-		       }
-		  });
+          });
+          
 
 	var g = svg.selectAll(".arc")
 	.data(pie(data))

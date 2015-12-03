@@ -38,10 +38,7 @@
 			<section class="landing" style="text-align: center;">
 				<h3>The World <inred>Economy</inred> through</h3>
 				<h1>Oil Trade Data</h1>
-				<p>Every major economy around the world is fueled by oil. But most of them don't produce the oil they use. Who benefit from the lower oil prices, and who suffer from them?</p>
-				<p>
-					<small>Visualized by Thuy Nguyen</small>
-				</p>
+				<p>Every major economy around the world is fueled by oil. But most of them don't produce the oil they use. Why the oil price is falling? Who benefit from the lower oil prices, and who suffer from them?</p>
 			</section>
 		
 				<section>
@@ -202,25 +199,13 @@
     });
 
 	$(document).ready(function() {
-		//drawProductionByRegions(production_regions);
-		    
-		Reveal.addEventListener( 'prodbyregionRedraw', function( event ) {
-		    //redraw map
-		    drawProductionByRegions(production_regions);
-		    
-		} );
-		Reveal.addEventListener( 'prodUSRedraw', function( event ) {
-		    //redraw map
-		    $("#prodUS").empty();
-		    drawProdUSChart();
-		} );
+
+		drawProductionByRegions(production_regions);
+
+		drawProdUSChart();
 		
-		Reveal.addEventListener( 'consbyregionRedraw', function( event ) {
-		    //redraw map
-		    
-		    drawConsumptionByRegions(consumption_regions);
-		} );
-		
+		drawConsumptionByRegions(consumption_regions);
+	
 		drawConsumptionByCountry();
 
 		Reveal.addEventListener( 'consumptionRedraw', function( event ) {
