@@ -2,7 +2,7 @@ function drawProdUSChart(){
 
 var margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
-    height = 540 - margin.top - margin.bottom;
+    height = 400 - margin.top - margin.bottom;
 
 var parseDate = d3.time.format("%Y").parse;
 
